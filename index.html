@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Design Seats</title>
+  <link rel="stylesheet" href="scss/style.css" />
+
+  <script src="js/main.min.js"></script>
+  <script src="js/main.js" defer></script>
+
+  <head>
+    <link rel="icon" href="images/favicon.ico">
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+    </style>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap");
+    </style>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <header class="header" id="myHeader">
+        <div class="container">
+          <div class="header__inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#about" class="menu__list-link">О нас</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#gallery" class="menu__list-link">Галерея</a>
+                </li>
+              </ul>
+            </nav>
+            <a href="#" class="logo">
+              <img src="images/logo.png" alt="" class="menu__logo-image" />
+            </a>
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__list-item">
+                  <a href="#news-1" class="menu__list-link">Новости</a>
+                </li>
+                <li class="menu__list-item">
+                  <a href="#contacts" class="menu__list-link">Контакты</a>
+                </li>
+              </ul>
+            </nav>
+
+            <input type="checkbox" id="overlay-input" />
+            <label for="overlay-input" id="overlay-button"><span></span></label>
+            <div id="overlay" class="overlay">
+              <ul>
+                <li>  <a href="#about" class="menu__list-link">О нас</a></li>
+                <li> <a href="#gallery" class="menu__list-link">Галерея</a></li>
+                <li>   <a href="#news-1" class="menu__list-link">Новости</a></li>
+                <li> <a href="#contacts" class="menu__list-link">Контакты</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </header>
+
+  
+
+      <main class="main">
+        <section class="top">
+          <div class="top__inner">
+            <div class="top__item">
+              <img src="images/photo_chair.svg" alt="" class="top__item-img" />
+              <div class="top__item-info">
+                <h2 class="top__item-title">
+                  Игровая<br />
+                  мебель
+                </h2>
+                <p class="top__item-text">
+                  <b>Дизайнерские</b> игровые кресла являются инновационными и
+                  элегантными решениями для тех, кто ищет не только максимальный
+                  комфорт и удобство, но также и стильный дизайн.<br /><br />
+
+                  <b>В нашем</b> магазине вы найдете дизайнерские кресла разных
+                  форм, цветов и конструкций, дополненные современными
+                  технологиями и функциями, которые позволяют достичь
+                  оптимального уровня комфорта и удобства во время игр или
+                  работы за компьютером.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="new-collection">
+          <div class="container-fluid">
+            <div class="new-collection__item">
+              <div class="new-collection__item-info">
+                <h3 class="new-collection__title">Новая коллекция</h3>
+                <p class="new-collection__text">
+                  Мы рады представить вам нашу новую коллекцию игровых кресел,
+                  которая обещает удивить вас своим стильным дизайном и
+                  функциональностью.
+                </p>
+              </div>
+            </div>
+            <div class="collection">
+              <div class="collection__item">
+                <img
+                  src="images/photo-1.png"
+                  alt=""
+                  class="collection__images"
+                />
+
+                <h3 class="collection__title">Model GigaCHad 2700</h3>
+                <div class="collection__button">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary js-modal"
+                    data-modal="#modal_1"
+                  >
+                    <a href="javascript:PopUpShow1()">Подробнее</a>
+                  </button>
+                </div>
+              </div>
+              <div class="collection__item">
+                <img
+                  src="images/photo-2.png"
+                  alt=""
+                  class="collection__images"
+                />
+                <h3 class="collection__title">Model Crock21</h3>
+                <div class="collection__button">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary js-modal"
+                    data-modal="#modal_2"
+                  >
+                    <a href="javascript:PopUpShow2()">Подробнее</a>
+                  </button>
+                </div>
+              </div>
+              <div class="collection__item">
+                <img
+                  src="images/photo-3.png"
+                  alt=""
+                  class="collection__images"
+                />
+                <h3 class="collection__title">Model BigBoi</h3>
+                <div class="collection__button">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary js-modal"
+                    data-modal="#modal_3"
+                  >
+                    <a href="javascript:PopUpShow3()">Подробнее</a>
+                  </button>
+                </div>
+              </div>
+              <div class="collection__item">
+                <img
+                  src="images/photo-4.png"
+                  alt=""
+                  class="collection__images"
+                />
+                <h3 class="collection__title">Model RedRat</h3>
+                <div class="collection__button">
+                  <button
+                    type="button"
+                    class="btn btn-lg btn-primary js-modal"
+                    data-modal="#modal_4"
+                  >
+                    <a href="javascript:PopUpShow4()">Подробнее</a>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="decor">
+          <div class="container">
+            <div class="decor__info">
+              <h2 class="decor__title">Кресла для вас</h2>
+              <p class="decor__text">
+                Дизайнерские компьютерные кресла — это уникальное сочетание
+                высокой эргономики, комфорта и стильного дизайна. Cовременный
+                офис или домашняя рабочая зона требуют не только
+                функциональности, но и красоты и уюта - ведь долгие часы работы
+                за компьютером напрямую влияют на физическое и эмоциональное
+                состояние человека. <br />
+                Компьютерное кресло не должно быть лишь приспособлением для
+                работы, оно должно соответствовать вашему стилю ведения бизнеса
+                и придавать персональности.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <div class="gallery" id="gallery">
+          <div class="container-fluid">
+            <h2 class="gallery__title">Галерея</h2>
+            <div class="tabs__container">
+              <div class="tabs">
+                <input type="radio" id="radio-1" name="tabs" checked />
+
+                <label
+                  class="tab"
+                  for="radio-1"
+                  onclick="javascript:img1.src='images/photo-chair-1.jpg'
+        javascript:img2.src='images/photo-chair-2.jpg'
+        javascript:img3.src='images/photo-chair-3.jpg'"
+                >
+                  Обычные
+                </label>
+                <input type="radio" id="radio-2" name="tabs" />
+                <label
+                  class="tab"
+                  for="radio-2"
+                  onclick="javascript:img1.src='images/photo-chair-4.jpg'
+        javascript:img2.src='images/photo-chair-5.jpg'
+        javascript:img3.src='images/photo-chair-6.jpg'"
+                >
+                  Гоночные
+                </label>
+                <input type="radio" id="radio-3" name="tabs" />
+                <label
+                  class="tab"
+                  for="radio-3"
+                  onclick="javascript:img1.src='images/photo-chair-7.jpg'
+        javascript:img2.src='images/photo-chair-8.jpg'
+        javascript:img3.src='images/photo-chair-9.jpg'"
+                >
+                  Эргономичные
+                </label>
+                <span class="glider"></span>
+              </div>
+            </div>
+            <div class="gallery__inner">
+              <div class="gallery__grid-item">
+                <figure class="gallery__grid-item-1">
+                  <img
+                    src="images/photo-chair-1.jpg"
+                    alt=""
+                    class="gallery__img-1"
+                    name="img1"
+                  />
+                </figure>
+                <figure class="gallery__grid-item-2">
+                  <img
+                    src="images/photo-chair-2.jpg"
+                    alt=""
+                    class="gallery__img-2"
+                    name="img2"
+                  />
+                </figure>
+                <figure class="gallery__grid-item-3">
+                  <img
+                    src="images/photo-chair-3.jpg"
+                    alt=""
+                    class="gallery__img-3"
+                    name="img3"
+                  />
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- /#modal_1 -->
+        <div id="modal_1" class="modal-window">
+          <div class="modal-window__inner">
+            <div class="modal-window__photo">
+              <img
+                src="images/collection-photo-1.jpg"
+                alt=""
+                class="modal-window__image"
+              />
+            </div>
+            <div class="modal-window__text">
+              <div>
+              <h1>Игровое кресло Model Crock21</h1>
+              <p>
+                Кресло <b>Crock21</b> оснащено множеством регулируемых
+                элементов, таких как наклонная спинка, высота сидушки,
+                подлокотники и подголовник. Также, есть возможность регулировки
+                жесткости спинки и высота специальной подушки для поясницы, что
+                позволяет индивидуализировать удобство кресла и настроить его
+                под свои личные нужды. <br /><br /><b>Цена: 34398</b>
+              </p>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h1>Окно заказа</h1>
+              </div>
+              <div class="modal-window__form">
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Ваше имя"
+                  maxlength="30"
+                /><br />
+                <input
+                  type="tel"
+                  class="modal-window__form-input"
+                  placeholder="Номер телефона"
+                  maxlength="13"
+                /><br />
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Номер карты"
+                  id="bank-card-input"
+                />
+                <input
+                  type="text"
+                  class="modal-window__form-input-2"
+                  placeholder="CVV"
+                  maxlength="3"
+                  
+                />
+                <button class="btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="modal-close">X</a>
+          </div>
+        </div>
+
+        <!-- /#modal_2 -->
+
+        <div id="modal_2" class="modal-window">
+          <div class="modal-window__inner">
+            <div class="modal-window__photo">
+              <img
+                src="images/collection-photo-2.jpg"
+                alt=""
+                class="modal-window__image"
+              />
+            </div>
+            <div class="modal-window__text">
+              <div>
+              <h1>Игровое кресло Model Crock21</h1>
+              <p>
+                Кресло <b>Crock21</b> оснащено множеством регулируемых
+                элементов, таких как наклонная спинка, высота сидушки,
+                подлокотники и подголовник. Также, есть возможность регулировки
+                жесткости спинки и высота специальной подушки для поясницы, что
+                позволяет индивидуализировать удобство кресла и настроить его
+                под свои личные нужды. <br /><br /><b>Цена: 34398</b>
+              </p>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h1>Окно заказа</h1>
+              </div>
+              <div class="modal-window__form">
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Ваше имя"
+                  maxlength="30"
+                /><br />
+                <input
+                  type="tel"
+                  class="modal-window__form-input"
+                  placeholder="Номер телефона"
+                  maxlength="13"
+                /><br />
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Номер карты"
+                  id="bank-card-input"
+                />
+                <input
+                  type="text"
+                  class="modal-window__form-input-2"
+                  placeholder="CVV"
+                  maxlength="3"
+                  
+                />
+                <button class="btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="modal-close">X</a>
+          </div>
+        </div>
+
+        <div id="modal_3" class="modal-window">
+          <div class="modal-window__inner">
+            <div class="modal-window__photo">
+              <img
+                src="images/collection-photo-3.jpg"
+                alt=""
+                class="modal-window__image"
+              />
+            </div>
+            <div class="modal-window__text">
+              <div>
+              <h1>Игровое кресло Model Crock21</h1>
+              <p>
+                Кресло <b>Crock21</b> оснащено множеством регулируемых
+                элементов, таких как наклонная спинка, высота сидушки,
+                подлокотники и подголовник. Также, есть возможность регулировки
+                жесткости спинки и высота специальной подушки для поясницы, что
+                позволяет индивидуализировать удобство кресла и настроить его
+                под свои личные нужды. <br /><br /><b>Цена: 34398</b>
+              </p>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h1>Окно заказа</h1>
+              </div>
+              <div class="modal-window__form">
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Ваше имя"
+                  maxlength="30"
+                /><br />
+                <input
+                  type="tel"
+                  class="modal-window__form-input"
+                  placeholder="Номер телефона"
+                  maxlength="13"
+                /><br />
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Номер карты"
+                  id="bank-card-input"
+                />
+                <input
+                  type="text"
+                  class="modal-window__form-input-2"
+                  placeholder="CVV"
+                  maxlength="3"
+                  
+                />
+                <button class="btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="modal-close">X</a>
+          </div>
+        </div>
+
+        <div id="modal_4" class="modal-window">
+          <div class="modal-window__inner">
+            <div class="modal-window__photo">
+              <img
+                src="images/collection-photo-4.jpg"
+                alt=""
+                class="modal-window__image"
+              />
+            </div>
+            <div class="modal-window__text">
+              <div>
+              <h1>Игровое кресло Model Crock21</h1>
+              <p>
+                Кресло <b>Crock21</b> оснащено множеством регулируемых
+                элементов, таких как наклонная спинка, высота сидушки,
+                подлокотники и подголовник. Также, есть возможность регулировки
+                жесткости спинки и высота специальной подушки для поясницы, что
+                позволяет индивидуализировать удобство кресла и настроить его
+                под свои личные нужды. <br /><br /><b>Цена: 34398</b>
+              </p>
+            </div>
+            <div>
+              <div class="modal-window__form-title">
+                <h1>Окно заказа</h1>
+              </div>
+              <div class="modal-window__form">
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Ваше имя"
+                  maxlength="30"
+                /><br />
+                <input
+                  type="tel"
+                  class="modal-window__form-input"
+                  placeholder="Номер телефона"
+                  maxlength="13"
+                /><br />
+                <input
+                  type="text"
+                  class="modal-window__form-input"
+                  placeholder="Номер карты"
+                  id="bank-card-input"
+                />
+                <input
+                  type="text"
+                  class="modal-window__form-input-2"
+                  placeholder="CVV"
+                  maxlength="3"
+                  
+                />
+                <button class="btn btn-lg btn-primary" type="Submit">
+                  <a href="javascript:PopUpShow()">Купить</a>
+                </button>
+              </div>
+            </div>
+            </div>
+            <a href="#" class="modal-close">X</a>
+          </div>
+        </div>
+
+      
+        <div id="popup1" class="modal-window-2">
+          <div class="modal-window-2__inner">
+            <div class="modal-window-2__text">
+              <h2>Спасибо за заказ</h2>
+              <p>
+                Ваша заявка была принята в обработку, ожидайте звонка от нашего оператора для уточнения деталей по вашему заказу. Спасибо, что выбираете нас!
+              </p>
+            </div>
+            <a
+              href="javascript:PopUpHide(); javascript:PopUpHide1();
+            javascript:PopUpHide2(); javascript:PopUpHide3(); javascript:PopUpHide4(); "
+              class="modal-close-2"
+              >X</a
+            >
+          </div>
+        </div>
+
+        <section class="inspiration">
+          <div class="container-fluid">
+            <div class="inspiration__inner">
+              <div class="inspiration__item" id="about">
+                <img
+                  src="images/insp-chair.png"
+                  alt=""
+                  class="inspiration__item-img"
+                />
+                <div class="inspiration__item-info">
+                  <h3 class="inspiration__item-title">Почему мы?</h3>
+                  <p class="inspiration__item-text">
+                    <b>Наши</b> игровые кресла представляют собой надежное
+                    решение для комфортного времяпровождения за компьютером и
+                    играх.Наши кресла изготовлены из высококачественных
+                    материалов, таких как прочный металлический каркас, мягкие
+                    подушки из пены и покрытие кожей экоТекс, - это обеспечивает
+                    долговечность, надежность и удобство в использовании.<br /><br />
+
+                    <b>Мы</b> уделяем много внимания комфорту и удобству наших
+                    кресел. Они имеют множество настроек и регулировок, чтобы
+                    каждый человек мог настроить их под свои потребности. Мы
+                    также используем качественные материалы, которые
+                    обеспечивают комфорт даже при длительном использовании.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="inspiration-2">
+          <div class="container-fluid-2">
+            <div class="inspiration-2__inner-2">
+              <div class="inspiration-2__item-2">
+                <div class="inspiration-2__item-info-2">
+                  <h3 class="inspiration-2__item-title-2">Наша команда</h3>
+                  <p class="inspiration-2__item-text-2">
+                    <b>Наша команда</b> состоит из квалифицированных и опытных
+                    специалистов в различных областях, которые работают вместе
+                    для достижения общей цели - улучшения жизни и удобства наших
+                    клиентов.<br /><br />
+
+                    <b>В нашей</b> команде есть разработчики, дизайнеры,
+                    инженеры, эксперты по продвижению и маркетингу, а также
+                    специалисты по обслуживанию клиентов. Мы дорожим качеством
+                    продукции и услуг, которые предоставляем, и всегда готовы
+                    помочь нашим клиентам с любыми вопросами и проблемами.
+                    <br />
+                  </p>
+                </div>
+                <div class="anchor" id="news"></div>
+                <img
+                  src="images/dog-chair.png"
+                  alt=""
+                  class="inspiration-2__item-img-2"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="comments">
+          <div class="container">
+            <h3 class="comments__title">Отзывы</h3>
+            <div class="user">
+              <div class="user__item">
+                <div class="user__block-img">
+                  <img src="images/user-1.png" alt="" class="user__images" />
+                </div>
+
+                <div class="user__info">
+                  <h3 class="user__title">Шестакова Адель</h3>
+
+                  <div class="user__info-text">
+                    <p class="user__text">
+                      “Уже несколько раз заказываю здесь свечи, очень приятный и
+                      интересный подарок!”
+                    </p>
+                  </div>
+
+                  <p class="user__date"><br />21.10.2022</p>
+                </div>
+              </div>
+              <div class="user__item">
+                <div class="user__block-img">
+                  <img src="images/user-2.png" alt="" class="user__images" />
+                </div>
+
+                <div class="user__info">
+                  <h3 class="user__title">Жукова Мария</h3>
+                  <div class="user__info-text">
+                    <p class="user__text">
+                      “Недавно услышала о магазине, но уже заказала много
+                      свечей!”
+                    </p>
+                  </div>
+
+                  <p class="user__date"><br />21.10.2022</p>
+                </div>
+              </div>
+              <div class="user__item">
+                <div class="user__block-img">
+                  <img src="images/user-3.png" alt="" class="user__images" />
+                </div>
+
+                <div class="user__info">
+                  <h3 class="user__title">Степанова Полина</h3>
+                  <div class="user__info-text">
+                    <p class="user__text">
+                      “Замечательные ароматизированные свечи! Цена соответствует
+                      качеству!”
+                    </p>
+                  </div>
+
+                  <p class="user__date"><br />21.10.2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="news">
+          <div class="container">
+            <h3 class="news__title" id="news-1">Наши новости</h3>
+            <div class="news-box">
+              <div class="news-box__item">
+                <div class="news-box__block-img">
+                  <img
+                    src="images/news-image-1.png"
+                    alt=""
+                    class="news-box__images"
+                  />
+                </div>
+
+                <div class="news-box__info">
+                  <h3 class="news-box__title">
+                    Cooler Master представила игровое кресло Synk X
+                  </h3>
+
+                  <div class="news-box__info-text">
+                    <p class="news-box__text">
+                      Производитель компьютерных комплектующих и периферийных
+                      устройств, компания Cooler Master, анонсировал игровое
+                      кресло с тактильной обратной связью.
+                    </p>
+                  </div>
+
+                  <p class="news-box__date"><br />21.10.2022</p>
+                </div>
+              </div>
+              <div class="news-box__item">
+                <div class="news-box__block-img">
+                  <img
+                    src="images/news-image-2.png"
+                    alt=""
+                    class="news-box__images"
+                  />
+                </div>
+
+                <div class="news-box__info">
+                  <h3 class="news-box__title">Как выбрать геймерское кресло</h3>
+                  <div class="news-box__info-text">
+                    <p class="news-box__text">
+                      При выборе компьютерного кресла следует учесть несколько
+                      ключевых параметров. Они помогут понять, какая модель
+                      подходит именно вам.
+                    </p>
+                  </div>
+
+                  <p class="news-box__date"><br />21.10.2022</p>
+                </div>
+              </div>
+              <div class="news-box__item">
+                <div class="news-box__block-img">
+                  <img
+                    src="images/news-image-3.png"
+                    alt=""
+                    class="news-box__images"
+                  />
+                </div>
+
+                <div class="news-box__info">
+                  <h3 class="news-box__title">
+                    Обзор Razer Enki: аскетичное игровое кресло
+                  </h3>
+                  <div class="news-box__info-text">
+                    <p class="news-box__text">
+                      Производитель компьютерных комплектующих и периферийных
+                      устройств, компания Cooler Master, анонсировал игровое
+                      кресло с тактильной обратной связью.
+                    </p>
+                  </div>
+
+                  <p class="news-box__date"><br />21.10.2022</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <span class="up"
+          ><img src="images/scroll.png" alt="" class="scroll"
+        /></span>
+
+       
+      </main>
+
+      <footer class="footer">
+        <div class="footer__content" id="contacts">
+          <div class="container">
+            <div class="footer__inner">
+              <div class="footer__info">
+                <h6 class="footer__info-title">Онлайн заявка</h6>
+                <p class="footer__info-text">
+                  Оставьте вашу почту, чтобы быть в курсе наших новостей
+                </p>
+                <form class="footer__form">
+                  <input
+                    type="email"
+                    class="footer__form-input"
+                    placeholder="Подписаться на рассылку"
+                  />
+                  <button class="footer__form-button" type="Submit">
+                    Подписаться
+                  </button>
+                </form>
+              </div>
+              <ul class="footer__social">
+                <h3 class="footer__social-title">Мессенджеры:</h3>
+                <li class="footer__social-item">
+                  <img src="images/icons/skype.svg" alt="">
+                  <a href="#" class="footer__social-link">Skype</a>
+                </li>
+                <li class="footer__social-item">
+                  <img src="images/icons/telegram.svg" alt="">
+                  <a href="#" class="footer__social-link">Telegram</a>
+                </li>
+                <li class="footer__social-item">
+                  <img src="images/icons/whatsapp.svg" alt="">
+                  <a href="#" class="footer__social-link">WhatsApp</a>
+                </li>
+                <li class="footer__social-item">
+                  <img src="images/icons/viber.svg" alt="">
+                  <a href="#" class="footer__social-link">Viber</a>
+                </li>
+              </ul>
+
+              <nav class="footer__menu">
+                <ul class="footer__menu-list">
+                  <h3 class="footer__social-title">Контакты:</h3>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__social-link">+375(29)654-23-76</a>
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__social-link"
+                      >Время работы: 10:00-22:00</a
+                    >
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__social-link"
+                      >Nashapochta@mail.com</a
+                    >
+                  </li>
+                  <li class="footer__menu-item">
+                    <a href="" class="footer__social-link"
+                      >Почтовый адрес: 220070, г. Минск</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <div class="footer__copyright">
+          <p>Copyright © 2022 - 2023 Infinity®. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
+
+    <script defer src="http://code.jquery.com/jquery-2.0.2.min.js"></script>
+    <script>
+      $(document).ready(function () {
+       
+        PopUpHide();
+      });
+      
+      function PopUpShow() {
+       
+        $("#popup1").show();
+      }
+     
+      function PopUpHide() {
+       
+        $("#popup1").hide();
+      }
+
+      function PopUpShow1() {
+        
+        $("#modal_1").show();
+      }
+      
+      function PopUpHide1() {
+      
+        $("#modal_1").hide();
+      }
+
+      function PopUpShow2() {
+       
+        $("#modal_2").show();
+      }
+      
+      function PopUpHide2() {
+      
+        $("#modal_2").hide();
+      }
+
+      function PopUpShow3() {
+    
+        $("#modal_3").show();
+      }
+  
+      function PopUpHide3() {
+      
+        $("#modal_3").hide();
+      }
+
+      function PopUpShow4() {
+       
+        $("#modal_4").show();
+      }
+     
+      function PopUpHide4() {
+       
+        $("#modal_4").hide();
+      }
+    </script>
+     
+  </body>
+
+ 
+</html>
